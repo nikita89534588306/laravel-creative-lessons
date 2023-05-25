@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('content');
             $table->string('image')->nullable();
             $table->unsignedBigInteger('likes')->nullable();
-            $table->bololean('is_published')->default(true);
+            $table->boolean('is_published')->default(true);
             
             $table->timestamps();
         });
