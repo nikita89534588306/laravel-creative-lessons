@@ -16,8 +16,13 @@ class PostFactory extends Factory
      */
     public function definition(): array
     {
+
         return [
-            //
+            'title' => fake()->sentence(),
+            'content' => fake()->text(),
+            //$table->string('image')->nullable();
+            'likes' => fake()->numberBetween(0, 666),
+            'is_published' =>fake()->boolean(),
         ];
     }
 }
